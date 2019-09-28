@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -30,12 +28,12 @@ int main()
 
         printf("queue array implementation \n");
 
-        printf("enqueue\n");
-        printf("dequeue\n");
-        printf("size\n");
+        printf("1: enqueue\n");
+        printf("2: dequeue\n");
+        printf("3: size\n");
 
-        printf("0. Exit\n");
-        printf("Select an option: ");
+        printf("0: exit\n");
+        printf("select an option: ");
 
         scanf("%d", &ch);
 
@@ -75,11 +73,11 @@ int main()
 
 
             case 0:
-                printf("Exiting from app.\n");
+                printf("code executed \n");
                 exit(0);
         
             default:
-                printf("Invalid choice, please input number between (0-5).");
+                printf("Invalid choice, please input number between (0-3).");
                 break;
         }
 
@@ -132,4 +130,3 @@ int isEmpty()
 {
     return (size == 0);
 }
-
